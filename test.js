@@ -6,11 +6,15 @@ function createTriangle(x) {
       tanda += " ";
     }
     for (let c = 1; c <= a; c++) {
-      tanda += "#";
+      tanda += "*";
     }
+    for (let d = 1; d <= a - 1; d++) {
+      tanda += "*";
+    }
+
     tanda += "\n";
   }
   return tanda;
 }
 
-console.log(createTriangle(5));
+console.log(createTriangle(10));
